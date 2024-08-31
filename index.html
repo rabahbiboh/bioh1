@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Produit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #232F3E;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .product-container {
+            display: flex;
+            margin: 20px;
+        }
+        .product-image {
+            flex: 1;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-details {
+            flex: 2;
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .product-price {
+            font-size: 20px;
+            color: #B12704;
+            margin: 10px 0;
+        }
+        .product-description {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .buy-button {
+            background-color: #FFA41C;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .buy-button:hover {
+            background-color: #FF9900;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Panier</a>
+        <a href="#">Compte</a>
+    </div>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://via.placeholder.com/300" alt="Image du produit">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Nom du Produit</h1>
+            <p class="product-price">€99.99</p>
+            <p class="product-description">Description détaillée du produit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="buy-button">Acheter maintenant</button>
+        </div>
+    </div>
+  <script src="app.js"> </script>
+</body>
+</html>
